@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="io.hankersyan.cordova.softkeyboard"
+    version="1.0.0">
+
+    <engines>
+        <engine name="cordova" version=">=4.0.0" />
+    </engines>
+
+    <name>softkeyboard</name>
+
+    <description>softkeyboard plugin for Cordova/PhoneGap</description>
+
+    <author>HankersYan</author>
+
+    <keywords>softkeyboard</keywords>
+
+    <license>MIT</license>
+
+    <js-module src="www/softkeyboard.js" name="softkeyboard">
+        <clobbers target="cordova.plugins.softkeyboard" />
+    </js-module>
+
+    <!-- iOS -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="SoftKeyboard">
+                <param name="ios-package" value="CDVSoftKeyboard" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/CDVSoftKeyboard.h" />
+        <source-file src="src/ios/CDVSoftKeyboard.m" />
+    </platform>
+
+    <!-- Android -->
+    <platform name="android">
+        <source-file src="src/android/SoftKeyboard.java" target-dir="src/io/hankersyan/cordova/softkeyboard" />
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="SoftKeyboard">
+                <param name="android-package" value="io.hankersyan.cordova.softkeyboard.SoftKeyboard" />
+            </feature>
+        </config-file>
+    </platform>
+    
+</plugin>

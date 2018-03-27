@@ -1,0 +1,34 @@
+{
+  "name": "hankersyan-cordova-plugin-softkeyboard",
+  "version": "1.0.0",
+  "description": "softkeyboard plugin for Cordova/PhoneGap",
+  "cordova": {
+    "id": "io.hankersyan.cordova.softkeyboard",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hankersyan/cordova-plugin-softkeyboard.git"
+  },
+  "keywords": [
+    "softkeyboard",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=4.0.0"
+    }
+  ],
+  "author": "Hankers.Yan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hankersyan/cordova-plugin-softkeyboard/issues"
+  },
+  "homepage": "https://github.com/hankersyan/cordova-plugin-softkeyboard#readme"
+}
