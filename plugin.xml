@@ -18,7 +18,7 @@
 
     <license>MIT</license>
 
-    <js-module src="www/softkeyboard.js" name="softkeyboard">
+    <js-module src="www/softkeyboard.js" name="SoftKeyboard">
         <clobbers target="cordova.plugins.softkeyboard" />
     </js-module>
 
