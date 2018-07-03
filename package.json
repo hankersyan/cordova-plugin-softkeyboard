@@ -1,9 +1,9 @@
 {
-  "name": "hankersyan-cordova-plugin-softkeyboard",
+  "name": "io.hankersyan.cordova.plugin.softkeyboard",
   "version": "1.0.0",
   "description": "softkeyboard plugin for Cordova/PhoneGap",
   "cordova": {
-    "id": "io.hankersyan.cordova.softkeyboard",
+    "id": "io.hankersyan.cordova.plugin.softkeyboard",
     "platforms": [
       "ios",
       "android"
